@@ -44,12 +44,6 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['env', 'react'],
-            // 在开发的时候才启用HMR和Catch Error
-            env: {
-              development: {
-                presets: ['react-hmre']
-              }
-            }
           }
         }
       },

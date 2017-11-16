@@ -7,4 +7,41 @@ $backgroundColor: #f5f5f5;
   margin: 10px;
   border-radius: 3px;
   background-color: $backgroundColor;
+  cursor: move;
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin: 14px 20px;
+    font-weight: 600;
+    button {
+      font-size: 16px;
+      border-style: none;
+      color: #808080;
+      background-color: $backgroundColor;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+  .lists {
+    li {
+      display: flex;
+      margin: 8px;
+      padding: 10px;
+      border-radius: 3px;
+      background-color: #fff;
+      border-left: 8px solid #fff;
+      &:hover {
+        border-left: 8px solid #a6a6a6;
+      }
+      span {
+        padding-right: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+      div {
+        line-height: 26px;
+      }
+    }
+  }
 }
