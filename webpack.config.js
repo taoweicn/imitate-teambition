@@ -26,7 +26,7 @@ module.exports = {
         use: [{
           loader: 'style-loader'
         }, {
-          loader: 'css-loader?modules'
+          loader: 'css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]'
         }, {
           loader: 'sass-loader'
         }]
@@ -52,12 +52,19 @@ module.exports = {
             }
           }
         }
+      },
+      {
+        test: /\.(jpg|jpeg|png|svg)$/,
+        loader: 'url-loader?name=[hash:8].[name].[ext]', // url-loader?limit=10000
+        query: {
+          limit: 10 * 1024 // 10KB
+        }
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'scaffold'
+      title: 'teambition'
     })
   ]
 };

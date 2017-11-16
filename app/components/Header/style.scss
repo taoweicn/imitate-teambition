@@ -1,0 +1,99 @@
+$themeColor: #3da8f5;
+$backgroundColor: #f5f5f5;
+$iconColor: #808080;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  // 左侧菜单区
+  .menu {
+    display: flex;
+    align-items: center;
+    .menuBar {
+      margin: -4px 12px 0;
+      color: $iconColor;
+      cursor: pointer;
+      &:hover {
+        color: $themeColor;
+      }
+    }
+    .search {
+      width: 244px;
+      height: 32px;
+      margin: 0 20px;
+      padding-left: 30px;
+      border: 1px solid #eee;
+      border-radius: 20px;
+      outline: none;
+      background: #fff url('./img/search.svg') no-repeat 4px center;
+      background-size: 20px;
+    }
+    .addBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background-color: $themeColor;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  // 右侧用户信息区
+  .user {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    .text {
+      display: flex;
+      width: 113px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      .mine {
+        @extend .flexCenter;
+        padding: 0 12px;
+        border-right: 1px solid #ccc;
+        cursor: pointer;
+        &:hover {
+          color: $themeColor;
+        }
+      }
+      .calendar {
+        @extend .flexCenter;
+        padding: 0 12px;
+        cursor: pointer;
+        &:hover {
+          color: $themeColor;
+        }
+      }
+    }
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .icons {
+      color: $iconColor;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: $themeColor;
+      }
+    }
+  }
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
