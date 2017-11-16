@@ -1,0 +1,71 @@
+$themeColor: #3da8f5;
+$backgroundColor: #f5f5f5;
+$menuHeight: 50px;
+
+.container {
+  display: flex;
+  height: $menuHeight;
+  justify-content: space-between;
+  // 导航区
+  .navigation {
+    display: flex;
+    align-items: center;
+    height: $menuHeight - 3px;
+    margin-left: 10px;
+    .commonButton {
+      margin: 0 10px;
+      font-size: 16px;
+      border-style: none;
+      background-color: $backgroundColor;
+      cursor: pointer;
+      outline: none;
+    }
+    .down {
+      @extend .commonButton;
+    }
+    .star {
+      @extend .commonButton;
+      color: #a6a6a6;
+    }
+  }
+  // 标签页
+  .tabs {
+    display: flex;
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      height: $menuHeight - 3px;
+      border-bottom: 3px solid $backgroundColor;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 3px solid $themeColor;
+      }
+    }
+    .selected {
+      @extend li;
+      border-bottom: 3px solid $themeColor;
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $menuHeight - 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    span {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      color: #808080;
+      border-left: 2px solid #808080;
+      &:hover {
+        color: $themeColor;
+      }
+      &:first-child {
+        border-style: none;
+      }
+    }
+  }
+}
