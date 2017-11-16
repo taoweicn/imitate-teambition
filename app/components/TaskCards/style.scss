@@ -1,4 +1,22 @@
+$themeColor: #3da8f5;
+$backgroundColor: #f5f5f5;
+
+
 .cards {
   display: flex;
   background-color: #fff;
+  .newList {
+    width: 288px;
+    height: 48px;
+    margin: 10px 5px;
+    padding: 0 20px;
+    border-radius: 3px;
+    line-height: 48px;
+    color: #808080;
+    background-color: $backgroundColor;
+    cursor: pointer;
+    &:hover {
+      color: $themeColor;
+    }
+  }
 }
