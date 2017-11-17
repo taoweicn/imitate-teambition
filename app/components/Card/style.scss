@@ -1,4 +1,4 @@
-$backgroundColor: #f5f5f5;
+$backgroundColor: #eee;
 
 
 .card {
@@ -21,27 +21,6 @@ $backgroundColor: #f5f5f5;
       background-color: $backgroundColor;
       cursor: pointer;
       outline: none;
-    }
-  }
-  .lists {
-    li {
-      display: flex;
-      margin: 8px;
-      padding: 10px;
-      border-radius: 3px;
-      background-color: #fff;
-      border-left: 8px solid #fff;
-      &:hover {
-        border-left: 8px solid #a6a6a6;
-      }
-      span {
-        padding-right: 10px;
-        text-align: center;
-        font-size: 20px;
-      }
-      div {
-        line-height: 26px;
-      }
     }
   }
 }

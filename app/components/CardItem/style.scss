@@ -1,0 +1,24 @@
+.cardItem {
+  display: flex;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+  border-left: 8px solid #fff;
+  cursor: pointer;
+  &:hover {
+    border-left: 8px solid #a6a6a6;
+  }
+  button {
+    height: 25px;
+    background-color: inherit;
+    border-style: none;
+    padding-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  div {
+    line-height: 26px;
+  }
+}
