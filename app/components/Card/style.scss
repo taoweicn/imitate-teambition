@@ -1,5 +1,5 @@
+$themeColor: #3da8f5;
 $backgroundColor: #eee;
-
 
 .card {
   width: 288px;
@@ -14,6 +14,9 @@ $backgroundColor: #eee;
     height: 20px;
     margin: 14px 20px;
     font-weight: 600;
+    span {
+      word-break: break-all;  // 非汉字换行
+    }
     button {
       font-size: 16px;
       border-style: none;
@@ -21,6 +24,61 @@ $backgroundColor: #eee;
       background-color: $backgroundColor;
       cursor: pointer;
       outline: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    margin: 4px 8px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    textarea {
+      width: 230px;
+      height: 60px;
+      padding: 10px;
+      border-radius: 3px;
+      outline: none;
+    }
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      button {
+        width: 72px;
+        height: 38px;
+        color: grey;
+        border-style: none;
+        background-color: #fff;
+        cursor: pointer;
+        outline: none;
+        &:last-child {
+          color: #fff;
+          background-color: $themeColor;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .addTask {
+    display: flex;
+    margin: 18px;
+    border-style: none;
+    background-color: $backgroundColor;
+    outline: none;
+    cursor: pointer;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background-color: $themeColor;
+      color: #fff;
+      font-size: 10px;
     }
   }
 }

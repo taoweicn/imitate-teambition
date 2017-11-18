@@ -1,6 +1,6 @@
 .cardItem {
   display: flex;
-  margin: 8px;
+  margin: 4px 8px;
   padding: 10px;
   border-radius: 3px;
   background-color: #fff;
@@ -18,7 +18,15 @@
     cursor: pointer;
     outline: none;
   }
-  div {
+  .content {
     line-height: 26px;
+    word-break: break-all;  //非汉字换行
   }
+}
+// 已完成状态的样式
+.cardItemCompleted {
+  @extend .cardItem;
+  color: #a6a6a6;
+  background-color: #f7f7f7;
+  border-left: 8px solid #f7f7f7;
 }
